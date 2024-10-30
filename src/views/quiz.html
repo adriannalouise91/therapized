@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/client/css/quiz.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="app-main">
+      <div class="iphone-screen">
+        <!--question 1-->
+        <div class="question active" id="question1">
+          <h1>Concerns and Goals</h1>
+          <h2>
+            What are your main concerns or reasons for seeking therapy? Select
+            all that apply.
+          </h2>
+          <label>
+            <input type="checkbox" name="answer" value="Answer A" />Anxiety
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer B" />Depression
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer C" />Stress
+            management
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer D" />Relationship
+            issues
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer E" />Grief or
+            loss
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer F" />Trauma
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer G" />Self-esteem
+          </label>
+          <label>
+            <input type="checkbox" name="answer" value="Answer H" />Other
+            (please specify)
+          </label>
+          <button id="next-btn" onclick="showNextQuestion(2)">Next</button>
+        </div>
+
+        <!-----Question 2------->
+        <div class="question" id="question2">
+          <h2>
+            Do you prefer shorter-term, goal-oriented therapy or long-term,
+            exploratory therapy?
+          </h2>
+          <label>
+            <input type="radio" name="answer" value="Answer A" />Short-term
+            (Focused on specific issues)
+          </label>
+          <label>
+            <input type="radio" name="answer" value="Answer B" />Long-term
+            (Exploring ongoing or deeper issues)
+          </label>
+          <label>
+            <input type="radio" name="answer" value="Answer C" />No prefernce
+          </label>
+          <button id="next-btn">Next</button>
+        </div>
+
+        <!--Question 3-->
+        <div class="question" id="question3">
+          <h1>Therapist Characteristics</h1>
+          <h2>Do you have a preference for your therapist's gender?</h2>
+          <label
+            ><input type="radio" name="answer" value="No preference"
+          /></label>
+          No preference
+          <label><input type="radio" name="answer" value="Male" /></label>Male
+          <label><input type="radio" name="answer" value="Female" /></label
+          >Female
+          <label><input type="radio" name="answer" value="Non-binary" /></label
+          >Non-binary
+        </div>
+      </div>
+    </main>
+    <script src="../client/js/quiz.js"></script>
+  </body>
+</html>

@@ -39,7 +39,7 @@ header {
 body {
   color: black;
   font-family: "poppins", sans-serif;
-  background-color: white;
+  background-color: #ede4da;
 }
 
 button {
@@ -93,7 +93,7 @@ button {
 .key-features {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
 }
 
@@ -104,6 +104,7 @@ button {
   padding: 5vh;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background-color: #06A37F;
 }
 
 .card:hover {
